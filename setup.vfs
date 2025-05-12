@@ -1,0 +1,45 @@
+login alice
+mkdir projects
+cd projects
+mkdir docs
+mkdir src
+touch README.md
+write README.md welcome to alice's project folder
+cd docs
+touch spec.txt
+write spec.txt this file contains design specs
+cd ..
+cd src
+touch main.cpp
+write main.cpp int main() { return 0; }
+touch utils.cpp
+write utils.cpp // helper functions go here
+cd ..
+cd ..
+mkdir notes
+cd notes
+touch alice_notes.txt
+write alice_notes.txt this is a private note
+cd ..
+logout
+
+login bob
+cd projects/src
+cat main.cpp
+write main.cpp trying to write as bob
+cd ..
+cd docs
+cat spec.txt
+cd ..
+cd ..
+cd notes
+cat alice_notes.txt  # should be denied
+cd ..
+
+tree
+pwd
+search main.cpp
+search README.md
+search spec.txt
+logout
+history
