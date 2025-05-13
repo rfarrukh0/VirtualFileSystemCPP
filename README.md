@@ -36,8 +36,6 @@ g++ main.cpp vfs.cpp -o vfs
 4.) Start using it like a mini shell. Try:
 
 ```
-Copy
-Edit
 mkdir test
 cd test
 touch notes.txt
